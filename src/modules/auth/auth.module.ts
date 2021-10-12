@@ -5,7 +5,6 @@ import { PassportModule } from '@nestjs/passport';
 import { LoginRecordModule } from 'modules/loginRecord/loginRecord.module';
 import { MailModule } from 'modules/mail/mail.module';
 import { UserModule } from 'modules/user/user.module';
-import { UserWarriorModule } from 'modules/userWarrior/userWarrior.module';
 import { AuthResolver } from './auth.resolver';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
@@ -25,7 +24,6 @@ import { JwtStrategy } from './jwt.strategy';
     UserModule,
     LoginRecordModule,
     MailModule,
-    UserWarriorModule,
   ],
   controllers: [],
   providers: [AuthService, JwtStrategy, AuthResolver],

@@ -7,10 +7,6 @@ export class AuthReturnDto extends DtoMapper {
   @MapFrom()
   _id: string;
 
-  @Field()
-  @MapFrom()
-  walletAddress: string;
-
   @Field({ nullable: true })
   @MapFrom()
   email: string;
